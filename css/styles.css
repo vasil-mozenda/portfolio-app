@@ -1,4 +1,49 @@
 /* Typography */
+
+body{
+    color: #000;
+  font: 300 16px/22px Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2, h3, h4 {
+    color: #343352;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 44px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  
+
+  h4 {
+    color: #a9b2b9;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  a{
+    color: #0000EE;
+  }
+  a:hover{
+      color:#ff0000;
+  }
+  a:visited{
+      color:#551A8B;
+  }
+  
+/*h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #343352;
+    font-size: 52px;
+    font-weight: 100;
+    line-height: 1.3em;
+}
 /* Layout */
 /* Animation */
 /* Responsive */
