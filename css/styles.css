@@ -83,10 +83,6 @@ h1, h2, h3  {
     font-weight: 600;
     letter-spacing: -1px;
 }
-section#intro h2 {
-    font-size: 2rem;
-    font-weight: 100;
-}
 
 
 /* Layout */
@@ -144,12 +140,42 @@ nav ul li a:hover:after {
     filter: invert(74%) sepia(75%) saturate(1648%) hue-rotate(182deg) brightness(106%) contrast(106%);
     
 }
-.row {
+
+section#Services > div,
+section#testimonials > div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 50px;
     justify-content: space-around;
+}
+section#intro > div,
+section#Partners > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+body.about > section h2 {
+    font-family: cursive;
+}
+section#intro h2 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+section#intro h4 {
+    padding: 0 0 50px 0;
+}
+
+section#intro p {
+    width: 50%;
+    font-size: 0.9rem;
+    line-height: 1.9;
+
 }
 
 
@@ -177,11 +203,11 @@ section#Services h2 {
     text-align: center;
     padding: 15px;
 }
-.service p {
+section#Services > div > div p {
     text-align: justify;
     font-size: 0.9rem;
 }
-.service h4 {
+section#Services > div > div h4 {
     text-align: center;
     font-weight: 600;
 }
@@ -247,17 +273,17 @@ section#Services h2 {
 }
 section#testimonials:before {
     position: absolute;
-    width: 50%;
+    width: 49.4%;
     height: 100%;
     z-index: -1;
     content: "";
     right: 0;
     top: 0;
-    background-color: #7c99ac;
+    background : #7c99ac;
 }
 section#Services:before {
     position: absolute;
-    width: 50%;
+    width: 50.5%;
     height: 100%;
     z-index: -1;
     content: "";
@@ -270,9 +296,9 @@ section#Services {
     position: relative;
 }
 
-section#intro,
-section#Partners  {
-    height: calc(100vh - 123px);
+
+span.white {
+    color: #fff;
 }
 /* Animation */
 
