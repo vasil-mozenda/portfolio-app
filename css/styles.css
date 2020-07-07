@@ -172,9 +172,10 @@ section#intro h4 {
 }
 
 section#intro p {
-    width: 50%;
+    width: 45%;
     font-size: 0.9rem;
     line-height: 1.9;
+    text-align: justify;
 
 }
 
@@ -300,6 +301,52 @@ section#Services {
 span.white {
     color: #fff;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+   
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider > div {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider > div > div,
+.slider > div > div > img {
+    height: 100px;
+    width: 250px;
+}
+
+
 /* Animation */
 
 .about nav ul li:nth-child(1) a:after {
