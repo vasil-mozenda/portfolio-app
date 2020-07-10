@@ -47,6 +47,8 @@ h1, h2, h3  {
 .videoDiv > div {
     position: relative;
     background-color: #000;
+    height: 90vh;
+    overflow: hidden;
 }
 .videoDiv > div > div {
     position: absolute;
@@ -59,11 +61,21 @@ h1, h2, h3  {
     justify-content: center;
     align-content: center;
 }
+@keyframes scales {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+
+}
 .videoDiv > div > video {
     width: 100%;
-    height: 90vh;
     object-fit: cover;
     opacity: 0.7;
+    animation: scales 10s ;
 }
 
 .videoDiv > div > div h2,
